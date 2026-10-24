@@ -5,7 +5,7 @@ function M.start(root)
         local err
         start,err=package.loadlib(root..'/Scripts/M4MusicStart.dll','m4music_start')
         assert(start,'Native launcher: '..tostring(err))
-  end
+    end
     start()
 end
 return M
